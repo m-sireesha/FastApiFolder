@@ -5,7 +5,7 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"message": "Hello sireesha, Docker & FastAPI!"}
+    return {"message": "Hello Sireesha, Welcome to the AI World!"}
 
 @app.get("/greet/{name}")
 def greet_user(name: str):
@@ -13,7 +13,7 @@ def greet_user(name: str):
     This endpoint takes a 'name' from the URL path and returns a personalized greeting.
     The 'name' variable is automatically treated as a string by FastAPI.
     """
-    return {"message": f"Hello, {name}! Your Dockerized FastAPI is working perfectly."}
+    return {"message": f"Hello, {name}! Your deployment is working perfectly."}
 
 #1.cd fastapifolder
 #2.docker build -t fastapi-app .
